@@ -2,28 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Force light mode */
+html {
+  color-scheme: light;
 }
 
 @media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  html {
+      color-scheme: light;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  background-color: #ffffff;
+  color: #000000;
   font-family: Arial, Helvetica, sans-serif;
 }
 
 
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
-}
+

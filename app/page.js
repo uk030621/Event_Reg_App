@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import styles from './MyForm.module.css';
 import Link from "next/link";
 
+
 export default function HomePage() {
     const [name, setName] = useState("");
     const [users, setUsers] = useState([]);
@@ -142,13 +143,17 @@ export default function HomePage() {
                             
                         ) : (
                             <>
+                            <div className="flex items-center justify-between">
                                 <span style={{ marginRight: "20px" }}>{user.name}</span>
-                                <button className="text-black rounded-md" onClick={() => handleEdit(user)} style={{ padding: "2px 2px" }}>
-                                    ✏️
-                                </button>
-                                <button className="text-red-500 rounded-md" onClick={() => handleDelete(user._id)} style={{ padding: "2px 2px" }}>
-                                    🗑️
-                                </button>
+                                <div className="flex items-center justify-end">
+                                    <button className="text-black rounded-md mr-5" onClick={() => handleEdit(user)} style={{ padding: "2px 2px" }}>
+                                        ✏️
+                                    </button>
+                                    <button className="text-red-500 rounded-md mr-10" onClick={() => handleDelete(user._id)} style={{ padding: "2px 2px" }}>
+                                        🗑️
+                                    </button>
+                                </div>
+                            </div>
                             </>
                         )}
                     </li>
