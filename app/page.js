@@ -106,7 +106,7 @@ export default function HomePage() {
     }, []);
 
     return (
-        <div className={styles.border} style={{padding: "20px", maxWidth: "600px", margin: "0 auto", marginTop: "20px", borderRadius: "5px" }}>
+        <div className={styles.border} style={{padding: "20px", maxWidth: "600px", margin: "10px", marginTop: "20px", borderRadius: "5px" }}>
             <h1 className="font-bold text-3xl mb-1">Thursday Club</h1>
             <h1 className="ml-3 font-bold text-xl mb-3">Event Registration</h1>
             <p className="ml-3 text-base">Venue: <span className="font-bold text-sm">TBA</span></p>
