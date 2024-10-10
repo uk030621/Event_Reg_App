@@ -18,6 +18,7 @@
 .inputField::placeholder {
     color: rgb(99, 98, 98); /* Change to your preferred color */
     opacity: 1;
+    text-transform: capitalize;
 }
 
 .nameList{
