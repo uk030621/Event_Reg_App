@@ -1,3 +1,5 @@
+//app/layout.js
+
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -25,7 +27,6 @@ export const metadata = {
 export const viewport = {
   themeColor: "#000000", // Set theme color for browsers and devices here
 };
-
 
 export default function RootLayout({ children }) {
   return (
